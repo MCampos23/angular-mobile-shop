@@ -6,12 +6,10 @@
       <span class="mt-2">{{ item.price }} €</span>
       <button (click)="deleteItem(item)" class="btn btn-danger">&times;</button>
     </div>
-
     <div class="cart-item">
       <span><b>Total amount: </b></span>
       <span>{{ totalAmount }} €</span>
     </div>
-
     <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
       <div>
         <label for="name"> Name </label>
